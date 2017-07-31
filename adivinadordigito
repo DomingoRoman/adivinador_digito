@@ -1,0 +1,52 @@
+# -*- coding: utf-8 -*-
+print('Por favor, tenga la amabilidad de decirme su nombre')
+nombre=input()
+print('Ahora,',nombre,'piensa un número entre 1 y 9.')
+print('Te haré algunas preguntas, ',nombre)
+print('¿Es mayor o igual que 5?')
+primeraRespuesta=int(input())
+if primeraRespuesta == 1:
+  print('Ahora dime si es mayor o igual que 8.')
+  segundaRespuesta=int(input())
+  if segundaRespuesta == 1:
+    print("¿Es un número 'mayor' que 8?")
+    terceraRespuesta = int(input())
+    if terceraRespuesta == 1:
+      print('Pensaste en el 9',nombre)
+    elif terceraRespuesta == 0:
+      print(nombre,'Pensaste en el 8')
+  elif segundaRespuesta == 0:
+#
+## entre 5 y 7
+#
+    print('mayor o igual que 6?')
+    terceraRespuesta=int(input())
+    if terceraRespuesta == 1:
+      print('6 o 7')
+      print("es 'mayor' que 6?")
+      cuartaRespuesta = int(input())
+      if cuartaRespuesta == 1:
+        print('Veo que pensaste en el 7')
+      elif cuartaRespuesta == 0:
+        print('Estoy seguro de que pensaste en el 6')
+    elif terceraRespuesta == 0:
+      print('Pensaste en el 5.')
+#
+# Segunda rama del árbol. El número está entre el 1 y el 4.
+elif primeraRespuesta == 0:
+  print('Mayor o igual que 2?')
+  quintaRespuesta=int(input())
+  if quintaRespuesta == 1:
+    print('Es mayor o igual que 3?')
+    sextaRespuesta =int(input())
+    if sextaRespuesta == 1:
+      print("es 'mayor' que 3?")
+      septimaRespuesta = int(input())
+      if septimaRespuesta == 1:
+        print('Ajá! Conque pensaste en el 4 ¿Eh?')
+      elif septimaRespuesta == 0:
+        print('El 3!?')
+    elif sextaRespuesta == 0:
+        print('Es el 2.')
+  elif quintaRespuesta == 0:
+    print('el número pensado es el 1')
