@@ -21,13 +21,15 @@
 #  MA 02110-1301, USA.
 #  
 print('Por favor, tenga la amabilidad de decirme su nombre')
-nombre=input()
-print('Ahora,',nombre,'piensa un número entre 1 y 9.')
-print('Te haré algunas preguntas, ',nombre)
+print('Por favor, use comillas')
+nombre=input("")
+print('Ahora, ' + nombre + ', piensa un número entre 1 y 9.')
+print('Te haré algunas preguntas, ' +nombre+".")
+print('Usa 1 para SÍ y 0 para NO')
 print('¿Es mayor o igual que 5?')
 primeraRespuesta=int(input())
 if primeraRespuesta == 1:
-  print('Ahora dime si es mayor o igual que 8.')
+  print('Ahora, dime si es mayor o igual que 8.')
   segundaRespuesta=int(input())
   if segundaRespuesta == 1:
     print("¿Es un número 'mayor' que 8?")
@@ -35,7 +37,7 @@ if primeraRespuesta == 1:
     if terceraRespuesta == 1:
       print('Pensaste en el 9',nombre)
     elif terceraRespuesta == 0:
-      print(nombre,'Pensaste en el 8')
+      print(nombre+', pensaste en el 8')
   elif segundaRespuesta == 0:
 #
 ## entre 5 y 7
